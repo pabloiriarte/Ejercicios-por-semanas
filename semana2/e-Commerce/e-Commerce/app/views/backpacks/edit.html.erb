@@ -1,0 +1,31 @@
+<h1>Editing backpack</h1>
+
+<%= form_for :backpack, url: backpack_path(@backpack), method: :patch do |f| %>
+
+  <p>
+    <%= f.label :color %><br>
+    <%= f.text_area :color %>
+  </p>
+
+  <p>
+    <%= f.label :capacity %><br>
+    <%= f.text_area :capacity %>
+  </p>
+
+  <p>
+    <%= f.label :pockets %><br>
+    <%= f.text_area :pockets %>
+  </p>
+
+  <p>
+    <%= f.label :waterproof %><br>
+    <%= f.text_area :waterproof %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', backpacks_path %>
+

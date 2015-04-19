@@ -1,0 +1,24 @@
+<h3>
+  <strong>color:</strong>
+  <%= @backpack.color %>
+</h3>
+
+<p>
+  <strong>capacity:</strong>
+  <%= @backpack.capacity %>
+</p>
+
+<p>
+  <strong>pockets:</strong>
+  <%= @backpack.pockets %>
+</p>
+
+<p>
+  <strong>waterproof:</strong>
+  <%= @backpack.waterproof %>
+</p>
+
+<p>
+<%= link_to 'Edit', edit_backpack_path(@backpack)%> 
+<%= link_to 'Back', backpacks_path %>
+</p>

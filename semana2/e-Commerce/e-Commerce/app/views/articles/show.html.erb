@@ -1,0 +1,29 @@
+<h3>
+  <strong>title:</strong>
+  <%= @article.title %>
+</h3>
+
+<p>
+  <strong>model:</strong>
+  <%= @article.model %>
+</p>
+
+<p>
+  <strong>processorBrand:</strong>
+  <%= @article.processorBrand %>
+</p>
+
+<p>
+  <strong>ram:</strong>
+  <%= @article.ram %>
+</p>
+
+<p>
+  <strong>price:</strong>
+  <%= @article.price %>
+</p>
+
+<p>
+<%= link_to 'Edit', edit_article_path(@article)%> 
+<%= link_to 'Back', articles_path %>
+</p>
